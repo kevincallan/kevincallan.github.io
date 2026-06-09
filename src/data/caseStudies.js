@@ -1,0 +1,146 @@
+export const caseStudies = [
+  {
+    id: "datapype",
+    flagship: true,
+    accent: "cyan",
+    kicker: "Flagship research",
+    affiliation: "DCU Molecular Design Group",
+    title: "DataPype",
+    subtitle: "Target-agnostic virtual screening for drug discovery",
+    visual: "pipeline",
+    summary:
+      "A virtual screening pipeline that ranks candidate small molecules against a target using a consensus of docking, shape, and pharmacophore methods. Framed around neurodegeneration biology, where TDP-43 and FUS act as disease anchors and tractable targets are prioritised for screening.",
+    points: [
+      "OpenEye OMEGA / FRED / ROCS plus RDKit pharmacophore screening in a consensus workflow.",
+      "Target-agnostic inputs: receptor, actives, decoys, and a reference ligand.",
+      "Benchmarking with ROC-AUC, enrichment factors, and BEDROC.",
+      "Chunk-based parallelisation with ChEMBL fallback and DUD-E-style workflows.",
+      "3D pose outputs for shortlisted compounds.",
+      "Neurodegeneration framing: tractable targets such as SIGMAR1, HDAC6, GSK3B, TBK1, and VCP where appropriate.",
+    ],
+    metrics: [
+      { label: "ROC-AUC", value: "Benchmark" },
+      { label: "Enrichment", value: "EF / BEDROC" },
+      { label: "Poses", value: "3D output" },
+    ],
+    note: "Public summary only; private code where applicable.",
+    links: [
+      { label: "datapype-ui (EGFR dashboard)", href: "https://github.com/kevincallan/datapype-ui", public: true },
+      { label: "DataPype (private)", href: "https://github.com/kevincallan/DataPype", public: false },
+    ],
+  },
+  {
+    id: "agentic",
+    accent: "mint",
+    kicker: "Applied AI systems",
+    affiliation: "Enterprise AI / research builds",
+    title: "Agentic AI & information retrieval",
+    subtitle: "Harnesses, retrieval, evaluation, and orchestration",
+    visual: "agent",
+    summary:
+      "Systems that wrap language models in dependable harnesses: retrieval pipelines feed grounded context, orchestration sequences reasoning steps, and evaluation keeps quality and traceability measurable rather than anecdotal.",
+    points: [
+      "Agent harnesses with tool use, control flow, and guardrails.",
+      "Retrieval pipelines for grounded, source-attributable answers.",
+      "Evaluation and orchestration as first-class, measurable components.",
+      "Enterprise-grade workflows built for safety and traceability.",
+    ],
+    metrics: [
+      { label: "Query", value: "→ retrieve" },
+      { label: "Reason", value: "→ evaluate" },
+      { label: "Answer", value: "traced" },
+    ],
+    note: "Public summary only; enterprise specifics omitted.",
+    links: [
+      { label: "info_retrieval_pipelines", href: "https://github.com/kevincallan/info_retrieval_pipelines", public: true },
+      { label: "parameter-golf", href: "https://github.com/kevincallan/parameter-golf", public: true },
+    ],
+  },
+  {
+    id: "genomics",
+    accent: "violet",
+    kicker: "Genomic medicine",
+    affiliation: "TCD MSc / Panomica",
+    title: "Genomics & multi-omics",
+    subtitle: "RNA-seq, population genomics, and omics-to-target evidence",
+    visual: "genome",
+    summary:
+      "Reproducible omics analysis connecting raw sequence to disease biology. Panomica is the centrepiece: an RNA-seq pipeline that doesn't just process reads but interrogates its own preprocessing — running several read-trimming strategies side by side and quantifying how each choice propagates downstream, so the biology isn't an artefact of a tool default.",
+    points: [
+      "Panomica: a reproducible RNA-seq pipeline that benchmarks multiple trimming methods against each other rather than trusting a single default.",
+      "Full arc per sample — QC, trimming, alignment / quantification, and differential-expression — with results held comparable across trimming strategies.",
+      "Reproducible by construction: pinned environments and a declarative workflow so a run is re-runnable and auditable, not a one-off notebook.",
+      "AlphaGenome research code for sequence-to-function modelling.",
+      "Ancient metagenomic / pathogen analysis workflows.",
+      "Population and statistical genomics feeding multi-omics target validation for neurodegeneration.",
+    ],
+    metrics: [
+      { label: "RNA-seq", value: "benchmarked" },
+      { label: "Trimming", value: "multi-method" },
+      { label: "Runs", value: "reproducible" },
+    ],
+    note: "Public summary only; private code where applicable.",
+    links: [
+      { label: "Panomica (private)", href: "https://github.com/kevincallan/Panomica", public: false },
+      { label: "alphagenome_research", href: "https://github.com/kevincallan/alphagenome_research", public: true },
+      { label: "AncientMetaGenomicPathogenicAnalysis", href: "https://github.com/kevincallan/AncientMetaGenomicPathogenicAnalysis", public: true },
+    ],
+  },
+  {
+    id: "integrity",
+    accent: "rose",
+    kicker: "Trust & safety",
+    affiliation: "Meta / Facebook era",
+    title: "Integrity analytics",
+    subtitle: "Research across high-scale integrity problems",
+    visual: "network",
+    summary:
+      "Analytics and research across high-scale integrity problems — spam, misinformation, coordinated manipulation, election-risk analytics, review systems, measurement, and the data infrastructure underneath them.",
+    points: [
+      "Risk and vulnerability research across products operating at billions of rows.",
+      "Coordinated-manipulation and election-risk analytics.",
+      "Experimentation, causal inference, and measurement design.",
+      "Scaled review systems and operational quality.",
+    ],
+    metrics: [
+      { label: "Scale", value: "billions" },
+      { label: "Method", value: "causal" },
+      { label: "Surface", value: "integrity" },
+    ],
+    disclaimer:
+      "Public coverage is included only to contextualise the problem space; it should not be read as a claim that Kevin authored, approved, or publicly represented those actions.",
+    note: "Domain summary only; no confidential or NDA-bound detail.",
+    links: [],
+  },
+  {
+    id: "memorability",
+    accent: "amber",
+    kicker: "Early research artefact",
+    affiliation: "MSc Computing & Data Analytics, DCU",
+    title: "Computer vision & media memorability",
+    subtitle:
+      "Building an AI system to detect human faces in video & predict video memorability",
+    visual: "vision",
+    summary:
+      "A student research paper for the MediaEval media-memorability task: predicting how memorable short silent videos are. The work tests a specific, neuroscience-grounded hypothesis — that the presence of a detectable human face raises a clip's memorability — and builds a face-detection-aware feature pipeline to measure it.",
+    points: [
+      "MediaEval memorability task over 10,000 short silent videos, each with crowd-sourced memorability scores.",
+      "Central hypothesis: a detectable human face increases short- and long-term memorability — motivated by the brain's dedicated face-processing machinery (e.g. the fusiform face area).",
+      "Built a face-detection stage that turns face presence, count, and size into engineered signals fed alongside generic visual features.",
+      "Layered feature engineering: HoG, LBP, SIFT, and colour histograms (low-level), Fc7 / Inception and C3D (deep spatial + spatio-temporal), and caption-text features (semantic).",
+      "Two regression targets — short-term and long-term memorability — trained and compared across feature sets.",
+      "Scored with Spearman rank correlation, the task's official metric, to rank predictions rather than fit absolute values.",
+    ],
+    metrics: [
+      { label: "Videos", value: "10,000" },
+      { label: "Score", value: "Spearman" },
+      { label: "Targets", value: "short / long" },
+      { label: "Features", value: "9+ families" },
+    ],
+    note: "Student / research paper (MSc, DCU) — not a peer-reviewed publication. The author's own write-up is the linked PDF.",
+    links: [
+      { label: "Read the paper (PDF)", href: "/Kevin Callan Computer Vision Paper.pdf", public: true },
+      { label: "emotion_recognition", href: "https://github.com/kevincallan/emotion_recognition", public: true },
+    ],
+  },
+];

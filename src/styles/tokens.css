@@ -1,0 +1,103 @@
+:root {
+  /* Surfaces */
+  --bg: #0c1112;
+  --bg-2: #11191b;
+  --panel: rgba(18, 28, 30, 0.88);
+  --panel-solid: #121c1e;
+  --hairline: rgba(237, 243, 238, 0.1);
+  --hairline-strong: rgba(237, 243, 238, 0.18);
+
+  /* Text */
+  --text: #edf3ee;
+  --muted: #a9b7b2;
+  --faint: #6f807b;
+
+  /* Accents */
+  --mint: #80d7b4;
+  --cyan: #7fd6e7;
+  --amber: #efbd68;
+  --rose: #f08f93;
+  --violet: #c7a5ff;
+  --cream: #f4f1e8;
+  --on-accent: #04110b;
+
+  /* Accent tints */
+  --mint-12: rgba(128, 215, 180, 0.12);
+  --cyan-12: rgba(127, 214, 231, 0.12);
+  --amber-12: rgba(239, 189, 104, 0.12);
+  --rose-12: rgba(240, 143, 147, 0.12);
+  --violet-12: rgba(199, 165, 255, 0.12);
+
+  /* Themed component surfaces */
+  --tile-bg: rgba(237, 243, 238, 0.03);
+  --tile-bg-strong: rgba(237, 243, 238, 0.06);
+  --input-bg: rgba(12, 17, 18, 0.6);
+  --nav-bg: rgba(12, 17, 18, 0.72);
+  --nav-bg-solid: rgba(12, 17, 18, 0.97);
+  --grid: rgba(237, 243, 238, 0.025);
+  --node-fill: rgba(12, 17, 18, 0.9);
+
+  /* Hero name gradient */
+  --name-grad-a: var(--cream);
+  --name-grad-b: var(--muted);
+
+  /* Typography */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  /* Layout */
+  --maxw: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 26px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --reveal-dur: 0.8s;
+
+  /* Effects */
+  --shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.75);
+  --glow-mint: 0 0 40px -8px rgba(128, 215, 180, 0.4);
+}
+
+/* ============================================================
+   Light theme — paper / cream palette.
+   The hero keeps its cinematic dark scope (see App.css .hero).
+   ============================================================ */
+:root[data-theme="light"] {
+  --bg: #f4f1e8;
+  --bg-2: #eae6da;
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-solid: #ffffff;
+  --hairline: rgba(18, 32, 29, 0.12);
+  --hairline-strong: rgba(18, 32, 29, 0.22);
+
+  --text: #16201d;
+  --muted: #4c5a55;
+  --faint: #7c8a85;
+
+  /* Deeper accent shades that read on cream */
+  --mint: #1f9d6e;
+  --cyan: #1f8ba6;
+  --amber: #a9761c;
+  --rose: #cf555b;
+  --violet: #6a4fc0;
+  --cream: #16201d;
+  --on-accent: #f7faf6;
+
+  --tile-bg: rgba(18, 32, 29, 0.04);
+  --tile-bg-strong: rgba(18, 32, 29, 0.08);
+  --input-bg: rgba(255, 255, 255, 0.85);
+  --nav-bg: rgba(244, 241, 232, 0.82);
+  --nav-bg-solid: rgba(244, 241, 232, 0.98);
+  --grid: rgba(18, 32, 29, 0.05);
+  --node-fill: #ffffff;
+
+  --name-grad-a: #16201d;
+  --name-grad-b: #3a4a44;
+
+  --shadow: 0 24px 60px -30px rgba(40, 55, 50, 0.35);
+  --glow-mint: 0 0 36px -10px rgba(31, 157, 110, 0.35);
+}
