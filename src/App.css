@@ -193,25 +193,8 @@
   align-items: center;
   padding: 8rem var(--gutter) 5rem;
   overflow: hidden;
-  /* The hero keeps its cinematic dark scope in both themes so the liquid
-     background and glassy console read the way they were designed. */
-  background: #0b1011;
-  --text: #edf3ee;
-  --muted: #a9b7b2;
-  --faint: #6f807b;
-  --panel: rgba(18, 28, 30, 0.88);
-  --panel-solid: #121c1e;
-  --hairline: rgba(237, 243, 238, 0.1);
-  --hairline-strong: rgba(237, 243, 238, 0.18);
-  --tile-bg: rgba(237, 243, 238, 0.03);
-  --tile-bg-strong: rgba(237, 243, 238, 0.06);
-  --mint: #80d7b4;
-  --cyan: #7fd6e7;
-  --amber: #efbd68;
-  --rose: #f08f93;
-  --violet: #c7a5ff;
-  --name-grad-a: #f4f1e8;
-  --name-grad-b: #a9b7b2;
+  /* Follows the active theme; the liquid canvas adapts its palette to match. */
+  background: transparent;
 }
 .liquid-canvas {
   position: absolute;
