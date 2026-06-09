@@ -23,12 +23,4 @@ export const focusAreas = [
     body: "MSc Genomic Medicine at Trinity College Dublin: population and statistical genomics, RNA-seq, multi-omics integration, and disease biology with a focus on neurodegeneration.",
     tags: ["RNA-seq", "Population genomics", "Multi-omics", "Disease biology"],
   },
-  {
-    id: "integrity",
-    accent: "rose",
-    label: "Trust & safety",
-    title: "Trust, safety & misinformation analytics",
-    body: "Meta-era analytics and research across spam, misinformation, foreign election interference, scaled review systems, experimentation, measurement, and operational quality.",
-    tags: ["Integrity", "Experimentation", "Measurement", "Adversarial behaviour"],
-  },
 ];

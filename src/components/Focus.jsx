@@ -10,8 +10,8 @@ export function Focus() {
           <p className="eyebrow">Current focus</p>
           <h2 className="section-title">Where my work points right now</h2>
           <p className="section-lead">
-            Four threads running in parallel — applied AI systems, molecular design,
-            genomic medicine, and the analytics of trust at scale.
+            Three threads running in parallel — applied AI systems, molecular design,
+            and genomic medicine.
           </p>
         </Reveal>
 
