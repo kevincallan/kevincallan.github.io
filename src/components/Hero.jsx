@@ -1,6 +1,5 @@
 import { site } from "../data/site.js";
 import { LiquidBackground } from "./visuals/LiquidBackground.jsx";
-import { ResearchConsole } from "./visuals/ResearchConsole.jsx";
 
 const CTAS = [
   { label: "View selected work", href: "#work", primary: true },
@@ -34,7 +33,6 @@ export function Hero() {
             ))}
           </ul>
         </div>
-        <ResearchConsole />
       </div>
       <a className="hero__scroll" href="#focus" aria-label="Scroll to current focus">
         <span className="label-mono">scroll</span>

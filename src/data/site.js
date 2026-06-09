@@ -28,11 +28,3 @@ export const navItems = [
   { id: "skills", label: "Systems" },
   { id: "contact", label: "Contact" },
 ];
-
-export const consoleMetrics = [
-  { label: "AI systems", value: "Agentic · IR", accent: "mint" },
-  { label: "Molecular design", value: "DataPype", accent: "cyan" },
-  { label: "Genomic medicine", value: "MSc · TCD", accent: "violet" },
-  { label: "Integrity analytics", value: "Meta-scale", accent: "rose" },
-  { label: "Data infrastructure", value: "Kafka · Spark", accent: "amber" },
-];
