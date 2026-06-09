@@ -986,6 +986,33 @@
   outline: none;
 }
 .contact__form button { align-self: flex-start; }
+.contact__form button:disabled { opacity: 0.6; cursor: progress; }
+.contact__error {
+  font-size: 0.85rem;
+  color: var(--rose);
+  margin: 0;
+}
+.contact__sent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.contact__sent-mark {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--on-accent);
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  box-shadow: var(--glow-mint);
+}
+.contact__sent h3 { font-size: 1.4rem; margin: 0; }
+.contact__sent p { margin: 0 0 0.6rem; }
 
 /* ============================================================
    Footer
