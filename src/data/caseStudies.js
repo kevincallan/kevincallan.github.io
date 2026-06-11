@@ -17,6 +17,7 @@ export const caseStudies = [
       "Chunk-based parallelisation with ChEMBL fallback and DUD-E-style workflows.",
       "3D pose outputs for shortlisted compounds.",
       "Neurodegeneration framing: tractable targets such as SIGMAR1, HDAC6, GSK3B, TBK1, and VCP where appropriate.",
+      "Interactive web write-up walking through the small-molecule therapeutic discovery approach and results.",
     ],
     metrics: [
       { label: "ROC-AUC", value: "Benchmark" },
@@ -25,6 +26,7 @@ export const caseStudies = [
     ],
     note: "Public summary only; private code where applicable.",
     links: [
+      { label: "Small-Molecule Therapeutic Discovery (live)", href: "https://small-molecule-therapeutic-discovery.vercel.app/", public: true },
       { label: "datapype-ui (EGFR dashboard)", href: "https://github.com/kevincallan/datapype-ui", public: true },
       { label: "DataPype (private)", href: "https://github.com/kevincallan/DataPype", public: false },
     ],
