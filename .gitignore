@@ -4,6 +4,9 @@ dist-ssr
 *.local
 .DS_Store
 .vite
+
+# Local-only personal CV (not published)
+Kevin_Callan_CV.pdf
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
