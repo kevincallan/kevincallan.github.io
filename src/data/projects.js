@@ -1,3 +1,5 @@
+import { site } from "./site.js";
+
 export const categories = [
   { id: "molecular", label: "Molecular design & genomics", accent: "cyan" },
   { id: "agentic", label: "Agentic AI & retrieval", accent: "mint" },
@@ -30,12 +32,12 @@ export const projects = [
     stack: ["TypeScript", "React"],
   },
   {
-    name: "Small-Molecule Therapeutic Discovery",
+    name: "Small-Molecule Modulators in Neurodegeneration",
     category: "molecular",
     visibility: "public",
-    url: "https://small-molecule-therapeutic-discovery.vercel.app/",
-    summary: "Live interactive write-up of the DataPype small-molecule discovery work.",
-    why: "Public walkthrough of the screening approach, methods, and results.",
+    url: site.links.dissertationApp,
+    summary: "Interactive companion to my MSc dissertation in Genomic Medicine.",
+    why: "Explore the five screening targets and the evidence behind the compound rankings.",
     stack: ["React", "Vite", "Vercel"],
   },
   {

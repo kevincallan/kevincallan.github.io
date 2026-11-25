@@ -1,4 +1,17 @@
+import { site } from "./site.js";
+
 export const researchItems = [
+  {
+    type: "MSc dissertation",
+    accent: "violet",
+    title: "Transcriptomic and Gene Network Target Prioritisation for Virtual Screening of Small-Molecule Modulators in Neurodegeneration",
+    venue: "MSc in Genomic Medicine, Trinity College Dublin · 2026",
+    detail:
+      "Awarded a distinction. I combined gene expression, gene network analysis, and virtual screening to study five proteins linked to neurodegeneration. TBK1 ranked highest in the network analysis, while SIGMAR1 showed the clearest agreement across screening methods.",
+    href: site.links.dissertation,
+    hrefLabel: "Read the dissertation (PDF)",
+    companion: { label: "Explore the interactive study", href: site.links.dissertationApp },
+  },
   {
     type: "Talk",
     accent: "mint",
@@ -29,14 +42,6 @@ export const researchItems = [
       "Documentation and technical artefacts for the target-agnostic virtual screening pipeline. Public summary only; private code where applicable.",
     href: "https://github.com/kevincallan/datapype-ui",
     hrefLabel: "Public benchmark dashboard",
-  },
-  {
-    type: "Research direction",
-    accent: "violet",
-    title: "Neurodegeneration small-molecule discovery",
-    venue: "MSc Genomic Medicine, Trinity College Dublin",
-    detail:
-      "MSc dissertation direction connecting multi-omics target validation to computational screening for neurodegeneration. In progress.",
   },
 ];
 

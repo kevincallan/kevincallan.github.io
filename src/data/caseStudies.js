@@ -1,3 +1,5 @@
+import { site } from "./site.js";
+
 export const caseStudies = [
   {
     id: "datapype",
@@ -26,7 +28,8 @@ export const caseStudies = [
     ],
     note: "Public summary only; private code where applicable.",
     links: [
-      { label: "Small-Molecule Therapeutic Discovery (live)", href: "https://small-molecule-therapeutic-discovery.vercel.app/", public: true },
+      { label: "Interactive dissertation companion", href: site.links.dissertationApp, public: true },
+      { label: "Read the MSc dissertation (PDF)", href: site.links.dissertation, public: true },
       { label: "datapype-ui (EGFR dashboard)", href: "https://github.com/kevincallan/datapype-ui", public: true },
       { label: "DataPype (private)", href: "https://github.com/kevincallan/DataPype", public: false },
     ],

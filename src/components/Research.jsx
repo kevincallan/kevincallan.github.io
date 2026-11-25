@@ -10,8 +10,7 @@ export function Research() {
           <p className="eyebrow">Research, writing &amp; talks</p>
           <h2 className="section-title">Papers &amp; technical writing</h2>
           <p className="section-lead">
-            Research artefacts and technical writing, labelled honestly by type. Items not yet
-            independently verified are listed separately below.
+            My MSc dissertation, earlier research papers, public talks, and technical documentation.
           </p>
         </Reveal>
 
@@ -28,11 +27,16 @@ export function Research() {
               <h3 className="research__title">{item.title}</h3>
               <p className="research__venue">{item.venue}</p>
               <p className="research__detail">{item.detail}</p>
-              {item.href && (
+              <div className="research__links">
                 <a className="research__link" href={item.href} target="_blank" rel="noreferrer">
                   {item.hrefLabel} <span aria-hidden="true">↗</span>
                 </a>
-              )}
+                {item.companion && (
+                  <a className="research__link" href={item.companion.href} target="_blank" rel="noreferrer">
+                    {item.companion.label} <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+              </div>
             </Reveal>
           ))}
         </div>

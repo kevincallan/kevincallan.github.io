@@ -820,6 +820,7 @@
 .research__title { font-size: 1.2rem; margin: 0.6rem 0 0.4rem; }
 .research__venue { font-size: 0.84rem; color: var(--faint); margin-bottom: 0.8rem; }
 .research__detail { font-size: 0.92rem; margin-bottom: 1rem; }
+.research__links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
 .research__link { font-weight: 600; font-size: 0.9rem; }
 .research__verify {
   padding: 1.8rem;

@@ -15,11 +15,17 @@ export const timeline = [
         detail:
           "DataPype — molecular design and neurodegeneration virtual screening.",
       },
+    ],
+  },
+  {
+    period: "2026",
+    accent: "violet",
+    entries: [
       {
-        role: "MSc Genomic Medicine",
+        role: "MSc in Genomic Medicine",
         org: "Trinity College Dublin",
         detail:
-          "Population and statistical genomics, RNA-seq, multi-omics, and disease biology.",
+          "Graduated in 2026. My dissertation on selecting targets for small-molecule screening in neurodegeneration received a distinction.",
       },
     ],
   },
